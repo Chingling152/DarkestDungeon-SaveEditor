@@ -1,50 +1,71 @@
 package com.ddsaveeditor.quirk.repository;
 
+import com.ddsaveeditor.file.JSONFileReader;
 import com.ddsaveeditor.quirk.Quirk;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
-// JSONArray a = (JSONArray) parser.parse(new FileReader("c:\\exer4-courses.json"));
+import java.io.IOException;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class QuirkLibrary implements IQuirkLibrary {
+    private static final String QUIRK_LIBRARY_PATH = ".\\quirk_library.json";
 
-    public QuirkLibrary(){
+    private final JSONFileReader fileReader;
 
+    private Collection<Quirk> quirks;
+    public QuirkLibrary(JSONFileReader fileReader){
+        this.fileReader=fileReader;
     }
 
     @Override
     public Collection<Quirk> GetAll() {
-        return new ArrayList<>();
+        try{
+            this.quirks = this.fileReader.readList(QUIRK_LIBRARY_PATH, Quirk.class);
+        }catch (IOException exception){
+            //TODO: criar excessão customizada
+            return new ArrayList<>();
+        }
+
+        return this.quirks;
     }
 
     @Override
-    public Quirk Get(String id) {
-        return null;
+    public Optional<Quirk> Get(String id) {
+        return this.quirks.stream().filter(quirk -> Objects.equals(quirk.id, id)).findFirst();
     }
 
     @Override
-    public Collection<Quirk> Get(String[]... ids) {
-        return new ArrayList<>();
+    public Collection<Quirk> Get(String... ids) {
+        return this.quirks.stream()
+                .filter(quirk -> Arrays.stream(ids).anyMatch(id -> Objects.equals(quirk.id, id)))
+                .collect(Collectors.toList());
     }
 
     @Override
     public Collection<Quirk> GetDiseases() {
-        return new ArrayList<>();
+        return this.quirks.stream()
+                .filter(quirk -> quirk.isDisease)
+                .collect(Collectors.toList());
     }
 
     @Override
     public Collection<Quirk> GetNegatives() {
-        return new ArrayList<>();
+        return this.quirks.stream()
+                .filter(quirk -> !quirk.isPositive)
+                .collect(Collectors.toList());
     }
 
     @Override
     public Collection<Quirk> GetPositives() {
-        return new ArrayList<>();
+        return this.quirks.stream()
+                .filter(quirk -> quirk.isPositive)
+                .collect(Collectors.toList());
     }
 
     @Override
     public Collection<Quirk> GetIncompatiblesWith(String id) {
-        return new ArrayList<>();
+        return this.quirks.stream()
+                .filter(quirk -> quirk.getIncompatibleQuirks().contains(id))
+                .collect(Collectors.toList());
     }
 }
