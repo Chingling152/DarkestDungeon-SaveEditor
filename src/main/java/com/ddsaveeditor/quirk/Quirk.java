@@ -1,5 +1,8 @@
 package com.ddsaveeditor.quirk;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Quirk {
     public final String id;
     public final String name;
@@ -21,7 +24,7 @@ public class Quirk {
         this.incompatibleQuirks = incompatibleQuirks;
     }
 
-    public String[] getIncompatibleQuirks(){
-        return this.incompatibleQuirks.clone();
+    public List<String> getIncompatibleQuirks(){
+        return Arrays.asList(this.incompatibleQuirks);
     }
 }
