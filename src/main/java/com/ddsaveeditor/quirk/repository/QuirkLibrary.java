@@ -18,7 +18,7 @@ public class QuirkLibrary implements IQuirkLibrary {
     }
 
     @Override
-    public Collection<Quirk> GetAll() {
+    public Collection<Quirk> getAll() {
         try{
             this.quirks = this.fileReader.readList(QUIRK_LIBRARY_PATH, Quirk.class);
         }catch (IOException exception){
@@ -30,40 +30,52 @@ public class QuirkLibrary implements IQuirkLibrary {
     }
 
     @Override
-    public Optional<Quirk> Get(String id) {
+    public Optional<Quirk> get(String id) {
+        if(this.quirks.isEmpty())
+            this.getAll();
         return this.quirks.stream().filter(quirk -> Objects.equals(quirk.id, id)).findFirst();
     }
 
     @Override
-    public Collection<Quirk> Get(String... ids) {
+    public Collection<Quirk> get(String... ids) {
+        if(this.quirks.isEmpty())
+            this.getAll();
         return this.quirks.stream()
                 .filter(quirk -> Arrays.stream(ids).anyMatch(id -> Objects.equals(quirk.id, id)))
                 .collect(Collectors.toList());
     }
 
     @Override
-    public Collection<Quirk> GetDiseases() {
+    public Collection<Quirk> getDiseases() {
+        if(this.quirks.isEmpty())
+            this.getAll();
         return this.quirks.stream()
                 .filter(quirk -> quirk.isDisease)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public Collection<Quirk> GetNegatives() {
+    public Collection<Quirk> getNegatives() {
+        if(this.quirks.isEmpty())
+            this.getAll();
         return this.quirks.stream()
                 .filter(quirk -> !quirk.isPositive)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public Collection<Quirk> GetPositives() {
+    public Collection<Quirk> getPositives() {
+        if(this.quirks.isEmpty())
+            this.getAll();
         return this.quirks.stream()
                 .filter(quirk -> quirk.isPositive)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public Collection<Quirk> GetIncompatiblesWith(String id) {
+    public Collection<Quirk> getIncompatiblesWith(String id) {
+        if(this.quirks.isEmpty())
+            this.getAll();
         return this.quirks.stream()
                 .filter(quirk -> quirk.getIncompatibleQuirks().contains(id))
                 .collect(Collectors.toList());
