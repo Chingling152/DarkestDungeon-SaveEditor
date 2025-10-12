@@ -1,13 +1,13 @@
-package com.ddsaveeditor.roster.hero;
+package com.ddsaveeditor.save.roster.hero;
 
-import com.ddsaveeditor.roster.hero.quirk.HeroQuirk;
-import com.ddsaveeditor.roster.hero.quirk.HeroQuirkException;
-import com.ddsaveeditor.roster.hero.quirk.HeroQuirkNotFoundException;
+import com.ddsaveeditor.save.roster.hero.quirk.HeroQuirk;
+import com.ddsaveeditor.save.roster.hero.quirk.HeroQuirkException;
+import com.ddsaveeditor.save.roster.hero.quirk.HeroQuirkIncompatibleException;
+import com.ddsaveeditor.save.roster.hero.quirk.HeroQuirkNotFoundException;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class Hero {
     private final int id;
@@ -23,6 +23,10 @@ public class Hero {
         this.id = id;
         this.equipment = new Equipment(0, 0);
         this.quirks = new HashMap<>();
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void changeWeapon(int weaponRank){
@@ -43,15 +47,20 @@ public class Hero {
         return this.quirks.values();
     }
 
-    public void addQuirk(String id, HeroQuirk quirk){
-        if(!Objects.equals(id, quirk.getId())){
-            throw new HeroQuirkException("Quirk id is not equal to param id");
-        }
-        if(this.hasQuirk(id)){
+    public void addQuirk(HeroQuirk quirk){
+        if(this.hasQuirk(quirk.id)){
             throw new HeroQuirkException("Hero already have a quirk with id " + id);
         }
 
-        this.quirks.put(id, quirk);
+        for (HeroQuirk currentQuirk : this.quirks.values()) {
+            if(!currentQuirk.isCompatible(quirk.id)) {
+                throw new HeroQuirkIncompatibleException(
+                        "The Quirk " + quirk.name + " is not compatible with the current quirk" + currentQuirk.name
+                );
+            }
+        }
+
+        this.quirks.put(quirk.id, quirk);
     }
 
     public boolean hasQuirk(String id){

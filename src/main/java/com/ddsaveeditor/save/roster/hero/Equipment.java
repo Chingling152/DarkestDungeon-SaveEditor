@@ -1,4 +1,4 @@
-package com.ddsaveeditor.roster.hero;
+package com.ddsaveeditor.save.roster.hero;
 
 class InvalidEquipmentRankException extends IndexOutOfBoundsException
 {

@@ -1,4 +1,4 @@
-package com.ddsaveeditor.roster.hero.quirk;
+package com.ddsaveeditor.save.roster.hero.quirk;
 
 public class HeroQuirkNotFoundException extends HeroQuirkException {
     public HeroQuirkNotFoundException(String message) {
