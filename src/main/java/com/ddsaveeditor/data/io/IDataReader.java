@@ -1,7 +1,6 @@
 package com.ddsaveeditor.data.io;
 
 import java.util.Collection;
-import java.util.Optional;
 
 /**
  * Interface to read data from a data source
@@ -16,7 +15,7 @@ public interface IDataReader {
      * @param <T> any type to return from datasource
      * @throws DataReaderException Any exception when trying to get the data
      */
-    <T> Optional<T> read(String partition, Class<T> elementType) throws DataReaderException;
+    <T> T read(String partition, Class<T> elementType) throws DataReaderException;
     /**
      * Read and convert a list of items from a partition
      * @param partition the partition to be read
