@@ -23,28 +23,49 @@ public class DSONFileReader implements IDataReader {
     private final Gson gson;
     private final PathProvider provider;
 
+    /**
+     * Creates a reader for JSON files in a specific folder set by provider
+     * @param provider the provider to get the base folder of the DSON files
+     */
     public DSONFileReader(PathProvider provider){
         this.provider = provider;
-        this.gson = new GsonBuilder()
+        this.gson = new GsonBuilder()//TODO: inject this (Maybe create a contract for it)
                 .registerTypeAdapter(RosterData.class, new RosterDataTypeAdapter())
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
                 .create();
     }
 
-    @Override
+    /**
+     * Gets one item from a DSON(.json) file
+     * @param file the .json file to be read (no need to use .json)
+     * @param elementType the return type
+     * @return One item from the DSON file or null if not found
+     * @param <T> any type to return from the DSON file
+     * @throws DataReaderException Any exception during DSON processing
+     */
     public <T> T read(String file, Class<T> elementType) throws DataReaderException {
         try {
-            Path fullPath = Paths.get(this.provider.getFullPath(file + ".json"));
+            if(!file.endsWith(".json")){
+                file+=".json";
+            }
+            Path fullPath = Paths.get(this.provider.getFullPath(file));
             byte[] fileData = Files.readAllBytes(fullPath);
             DSONReader reader = new DSONReader(fileData, DSONReader.UnhashBehavior.POUNDUNHASH);
             String json = reader.getJSonString(0, false);
             return gson.fromJson(json, elementType);
         }catch (Exception e){
-            throw new DataReaderException("Error during JSON processing: " + e.getMessage());
+            throw new DataReaderException("Error during DSON processing: " + e.getMessage());
         }
     }
 
-    @Override
+    /**
+     * Gets all items from a DSON(.json) file
+     * @param file the .json file to be read (no need to use .json)
+     * @param elementType the return type of the collection
+     * @return A collection with all items from the DSON file
+     * @param <T> any type to return from the DSON file
+     * @throws DataReaderException Any exception during DSON processing
+     */
     public <T> Collection<T> readList(String file, Class<T> elementType) throws DataReaderException {
         try {
             Path fullPath = Paths.get(this.provider.getFullPath(file + ".json"));
@@ -54,7 +75,7 @@ public class DSONFileReader implements IDataReader {
             Type collectionType = TypeToken.getParameterized(Collection.class, elementType).getType();
             return gson.fromJson(json, collectionType);
         }catch (Exception e){
-            throw new DataReaderException("Error during JSON processing: " + e.getMessage());
+            throw new DataReaderException("Error during DSON processing: " + e.getMessage());
         }
     }
 }
