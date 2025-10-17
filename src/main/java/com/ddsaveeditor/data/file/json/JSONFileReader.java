@@ -24,7 +24,7 @@ public class JSONFileReader implements IDataReader {
      */
     public JSONFileReader(PathProvider pathProvider){
         this.pathProvider = pathProvider;
-        this.gson = new GsonBuilder()
+        this.gson = new GsonBuilder()//TODO: change to JsonReader maybe?
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
                 .create();
     }
