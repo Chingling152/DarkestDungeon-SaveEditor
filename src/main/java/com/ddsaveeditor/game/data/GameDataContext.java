@@ -18,7 +18,6 @@ public class GameDataContext extends DataContext
     public ReadonlyDataCollection<Quirk> getQuirks(){
         return this.quirks;
     }
-
     /**
      * Creates a GameDataContext and loads its data
      * @param reader the reader responsible for returning the data
@@ -27,7 +26,6 @@ public class GameDataContext extends DataContext
         super(reader);
         this.load();
     }
-
     /** {@inheritDoc} **/
     public void load() {
         try{
@@ -42,7 +40,6 @@ public class GameDataContext extends DataContext
             throw new RuntimeException(e);
         }
     }
-
     /** {@inheritDoc} **/
     public void commit() {
 
