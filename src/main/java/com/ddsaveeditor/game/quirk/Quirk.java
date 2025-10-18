@@ -1,14 +1,16 @@
 package com.ddsaveeditor.game.quirk;
 
-import com.ddsaveeditor.data.DataEntity;
-
 import java.util.Arrays;
 import java.util.Collection;
 
 /**
  * Quirk data of Heroes from the game library
  */
-public class Quirk extends DataEntity {
+public class Quirk {
+    /**
+     * The identifier of the Quirk
+     */
+    public final String id;
     /**
      * Shows if the current Quirk gives a Buff or Debuff
      */
@@ -36,7 +38,7 @@ public class Quirk extends DataEntity {
             boolean isPositive, boolean isDisease,
             String classification, String[] incompatibleQuirks
     ) {
-        super(id);
+        this.id = id;
         this.isPositive = isPositive;
         this.isDisease = isDisease;
         this.classification = classification;
