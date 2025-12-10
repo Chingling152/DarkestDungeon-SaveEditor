@@ -2,6 +2,9 @@ package com.ddsaveeditor.save.roster.hero.quirk;
 
 import java.util.Objects;
 
+/**
+ *
+ */
 public class HeroQuirk {
     /**
      * Quirk id used to be found and used by heroes and {@link #incompatibleQuirks}
@@ -22,6 +25,13 @@ public class HeroQuirk {
     private boolean replacesQuirkViewed;
     private int evolutionDurationRemaining;
 
+    /**
+     *
+     * @param id
+     * @param isNew
+     * @param isLocked
+     * @param incompatibleQuirks
+     */
     public HeroQuirk(
             String id,
             boolean isNew, boolean isLocked,
