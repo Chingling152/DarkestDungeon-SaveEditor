@@ -1,0 +1,1587 @@
+[
+  {
+    "id": "tough",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "fragile"
+    ],
+    "name": "Tough"
+  },
+  {
+    "id": "fragile",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "tough"
+    ],
+    "name": "Fragile"
+  },
+  {
+    "id": "hard_skinned",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "soft"
+    ],
+    "name": "Hard Skinned"
+  },
+  {
+    "id": "soft",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "hard_skinned"
+    ],
+    "name": "Soft"
+  },
+  {
+    "id": "quick_reflexes",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "slow_reflexes"
+    ],
+    "name": "Quick Reflexes"
+  },
+  {
+    "id": "slow_reflexes",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "quick_reflexes"
+    ],
+    "name": "Slow Reflexes"
+  },
+  {
+    "id": "quickdraw",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "slowdraw"
+    ],
+    "name": "Quickdraw"
+  },
+  {
+    "id": "slowdraw",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "quickdraw"
+    ],
+    "name": "Slowdraw"
+  },
+  {
+    "id": "natural_swing",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "the_yips"
+    ],
+    "name": "Natural Swing"
+  },
+  {
+    "id": "the_yips",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "natural_swing"
+    ],
+    "name": "The Yips"
+  },
+  {
+    "id": "natural_eye",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "lazy_eye"
+    ],
+    "name": "Natural Eye"
+  },
+  {
+    "id": "lazy_eye",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "natural_eye"
+    ],
+    "name": "Lazy Eye"
+  },
+  {
+    "id": "evasive",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "clumsy"
+    ],
+    "name": "Evasive"
+  },
+  {
+    "id": "clumsy",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "evasive"
+    ],
+    "name": "Clumsy"
+  },
+  {
+    "id": "slugger",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "torn_rotator_cuff"
+    ],
+    "name": "Slugger"
+  },
+  {
+    "id": "torn_rotator_cuff",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "slugger"
+    ],
+    "name": "Torn Rotator Cuff"
+  },
+  {
+    "id": "unerring",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "scattering"
+    ],
+    "name": "Unerring"
+  },
+  {
+    "id": "scattering",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "unerring"
+    ],
+    "name": "Scattering"
+  },
+  {
+    "id": "accurate",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "inaccurate"
+    ],
+    "name": "Accurate"
+  },
+  {
+    "id": "inaccurate",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "accurate"
+    ],
+    "name": "Inaccurate"
+  },
+  {
+    "id": "precision_striker",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "weak_grip"
+    ],
+    "name": "Precision Striker"
+  },
+  {
+    "id": "weak_grip",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "precision_striker"
+    ],
+    "name": "Weak Grip"
+  },
+  {
+    "id": "eagle_eye",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "flawed_release"
+    ],
+    "name": "Eagle Eye"
+  },
+  {
+    "id": "flawed_release",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "eagle_eye"
+    ],
+    "name": "Flawed Release"
+  },
+  {
+    "id": "nervous",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "steady"
+    ],
+    "name": "Nervous"
+  },
+  {
+    "id": "steady",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "nervous"
+    ],
+    "name": "Steady"
+  },
+  {
+    "id": "resilient",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "ruminator"
+    ],
+    "name": "Resilient"
+  },
+  {
+    "id": "ruminator",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "resilient"
+    ],
+    "name": "Ruminator"
+  },
+  {
+    "id": "thin_blooded",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "thick_blooded"
+    ],
+    "name": "Thin Blooded"
+  },
+  {
+    "id": "thick_blooded",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "thin_blooded"
+    ],
+    "name": "Thick Blooded"
+  },
+  {
+    "id": "sickly",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "robust"
+    ],
+    "name": "Sickly"
+  },
+  {
+    "id": "robust",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "sickly"
+    ],
+    "name": "Robust"
+  },
+  {
+    "id": "anemic",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "clotter"
+    ],
+    "name": "Anemic"
+  },
+  {
+    "id": "clotter",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "anemic"
+    ],
+    "name": "Clotter"
+  },
+  {
+    "id": "fated",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Fated"
+  },
+  {
+    "id": "hard_noggin",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "shocker"
+    ],
+    "name": "Hard Noggin"
+  },
+  {
+    "id": "shocker",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "hard_noggin"
+    ],
+    "name": "Shocker"
+  },
+  {
+    "id": "mercurial",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "irrepressible"
+    ],
+    "name": "Mercurial"
+  },
+  {
+    "id": "irrepressible",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "mercurial"
+    ],
+    "name": "Irrepressible"
+  },
+  {
+    "id": "unyielding",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "suicidal"
+    ],
+    "name": "Unyielding"
+  },
+  {
+    "id": "suicidal",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "unyielding"
+    ],
+    "name": "Suicidal"
+  },
+  {
+    "id": "early_riser",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "sensitive_to_light"
+    ],
+    "name": "Early Riser"
+  },
+  {
+    "id": "night_owl",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "night_blindness"
+    ],
+    "name": "Night Owl"
+  },
+  {
+    "id": "nocturnal",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "diurnal"
+    ],
+    "name": "Nocturnal"
+  },
+  {
+    "id": "diurnal",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "nocturnal"
+    ],
+    "name": "Diurnal"
+  },
+  {
+    "id": "night_blindness",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "night_owl"
+    ],
+    "name": "Night Blindness"
+  },
+  {
+    "id": "sensitive_to_light",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "early_riser"
+    ],
+    "name": "Sensitive To Light"
+  },
+  {
+    "id": "warrior_of_light",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "lurker"
+    ],
+    "name": "Warrior Of Light"
+  },
+  {
+    "id": "lurker",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "warrior_of_light"
+    ],
+    "name": "Lurker"
+  },
+  {
+    "id": "second_wind",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "tuckered_out"
+    ],
+    "name": "Second Wind"
+  },
+  {
+    "id": "tuckered_out",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "second_wind"
+    ],
+    "name": "Tuckered Out"
+  },
+  {
+    "id": "last_gasp",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "winded"
+    ],
+    "name": "Last Gasp"
+  },
+  {
+    "id": "winded",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "last_gasp"
+    ],
+    "name": "Winded"
+  },
+  {
+    "id": "on_guard",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "off_guard"
+    ],
+    "name": "On Guard"
+  },
+  {
+    "id": "off_guard",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "on_guard"
+    ],
+    "name": "Off Guard"
+  },
+  {
+    "id": "clutch_hitter",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "dud_hitter"
+    ],
+    "name": "Clutch Hitter"
+  },
+  {
+    "id": "dud_hitter",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "clutch_hitter"
+    ],
+    "name": "Dud Hitter"
+  },
+  {
+    "id": "stress_faster",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "stress_eater"
+    ],
+    "name": "Stress Faster"
+  },
+  {
+    "id": "stress_eater",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "stress_faster"
+    ],
+    "name": "Stress Eater"
+  },
+  {
+    "id": "photomania",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Photomania"
+  },
+  {
+    "id": "lygophobia",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Lygophobia"
+  },
+  {
+    "id": "phengophobia",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Phengophobia"
+  },
+  {
+    "id": "zoophobia",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Zoophobia"
+  },
+  {
+    "id": "thanatophobia",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Thanatophobia"
+  },
+  {
+    "id": "satanophobia",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Satanophobia"
+  },
+  {
+    "id": "automatonophobia",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Automatonophobia"
+  },
+  {
+    "id": "back_tracker",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Back Tracker"
+  },
+  {
+    "id": "claustrophobia",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Claustrophobia"
+  },
+  {
+    "id": "bad_humours",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Bad Humours"
+  },
+  {
+    "id": "creeping_cough",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Creeping Cough"
+  },
+  {
+    "id": "hemophilia",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Hemophilia"
+  },
+  {
+    "id": "the_runs",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "The Runs"
+  },
+  {
+    "id": "wasting_sickness",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Wasting Sickness"
+  },
+  {
+    "id": "tetanus",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Tetanus"
+  },
+  {
+    "id": "rabies",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Rabies"
+  },
+  {
+    "id": "syphilis",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Syphilis"
+  },
+  {
+    "id": "stomach_cramp",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "fast_healer"
+    ],
+    "name": "Stomach Cramp"
+  },
+  {
+    "id": "bulimic",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "stout"
+    ],
+    "name": "Bulimic"
+  },
+  {
+    "id": "lethargy",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Lethargy"
+  },
+  {
+    "id": "spotted_fever",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Spotted Fever"
+  },
+  {
+    "id": "vertigo",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Vertigo"
+  },
+  {
+    "id": "vampiric_spirits",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Vampiric Spirits"
+  },
+  {
+    "id": "ennui",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Ennui"
+  },
+  {
+    "id": "the_ague",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "The Ague"
+  },
+  {
+    "id": "hysterical_blindness",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Hysterical Blindness"
+  },
+  {
+    "id": "scurvy",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Scurvy"
+  },
+  {
+    "id": "the_worries",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "The Worries"
+  },
+  {
+    "id": "the_fits",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "The Fits"
+  },
+  {
+    "id": "tapeworm",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "Tapeworm"
+  },
+  {
+    "id": "the_red_plague",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "The Red Plague"
+  },
+  {
+    "id": "the_black_plague",
+    "is_positive": false,
+    "is_disease": true,
+    "classification": "physical",
+    "incompatible_quirks": [],
+    "name": "The Black Plague"
+  },
+  {
+    "id": "dark_temptation",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Dark Temptation"
+  },
+  {
+    "id": "guilty_conscience",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Guilty Conscience"
+  },
+  {
+    "id": "kleptomaniac",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Kleptomaniac"
+  },
+  {
+    "id": "bloodthirsty",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Bloodthirsty"
+  },
+  {
+    "id": "hieromania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Hieromania"
+  },
+  {
+    "id": "curious",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Curious"
+  },
+  {
+    "id": "ablutomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Ablutomania"
+  },
+  {
+    "id": "dacnomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Dacnomania"
+  },
+  {
+    "id": "egomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Egomania"
+  },
+  {
+    "id": "hylomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Hylomania"
+  },
+  {
+    "id": "sitiomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Sitiomania"
+  },
+  {
+    "id": "plutomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Plutomania"
+  },
+  {
+    "id": "necromania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Necromania"
+  },
+  {
+    "id": "dipsomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "resolution"
+    ],
+    "name": "Dipsomania"
+  },
+  {
+    "id": "paranormania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Paranormania"
+  },
+  {
+    "id": "demonomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Demonomania"
+  },
+  {
+    "id": "hagiomania",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Hagiomania"
+  },
+  {
+    "id": "compulsive",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Compulsive"
+  },
+  {
+    "id": "corvids_curiosity",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "",
+    "incompatible_quirks": [],
+    "name": "Corvids Curiosity"
+  },
+  {
+    "id": "corvids_appetite",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "",
+    "incompatible_quirks": [],
+    "name": "Corvids Appetite"
+  },
+  {
+    "id": "corvids_blindness",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "",
+    "incompatible_quirks": [],
+    "name": "Corvids Blindness"
+  },
+  {
+    "id": "corvids_grace",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "",
+    "incompatible_quirks": [],
+    "name": "Corvids Grace"
+  },
+  {
+    "id": "corvids_eye",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "",
+    "incompatible_quirks": [],
+    "name": "Corvids Eye"
+  },
+  {
+    "id": "corvids_resilience",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "",
+    "incompatible_quirks": [],
+    "name": "Corvids Resilience"
+  },
+  {
+    "id": "alcoholism",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "resolution",
+      "gambler",
+      "love_interest",
+      "enlightened",
+      "god_fearing",
+      "flagellant"
+    ],
+    "name": "Alcoholism"
+  },
+  {
+    "id": "gambler",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "alcoholism",
+      "love_interest",
+      "enlightened",
+      "god_fearing",
+      "flagellant"
+    ],
+    "name": "Gambler"
+  },
+  {
+    "id": "love_interest",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "alcoholism",
+      "gambler",
+      "enlightened",
+      "god_fearing",
+      "flagellant"
+    ],
+    "name": "Love Interest"
+  },
+  {
+    "id": "enlightened",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "alcoholism",
+      "gambler",
+      "love_interest",
+      "god_fearing",
+      "flagellant",
+      "unquiet_mind"
+    ],
+    "name": "Enlightened"
+  },
+  {
+    "id": "god_fearing",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "witness",
+      "faithless",
+      "alcoholism",
+      "gambler",
+      "love_interest",
+      "enlightened",
+      "flagellant"
+    ],
+    "name": "God Fearing"
+  },
+  {
+    "id": "flagellant",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "faithless",
+      "alcoholism",
+      "gambler",
+      "love_interest",
+      "enlightened",
+      "god_fearing"
+    ],
+    "name": "Flagellant"
+  },
+  {
+    "id": "resolution",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "alcoholism",
+      "dipsomania"
+    ],
+    "name": "Resolution"
+  },
+  {
+    "id": "known_cheat",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Known Cheat"
+  },
+  {
+    "id": "deviant_tastes",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Deviant Tastes"
+  },
+  {
+    "id": "unquiet_mind",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "enlightened"
+    ],
+    "name": "Unquiet Mind"
+  },
+  {
+    "id": "witness",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "god_fearing"
+    ],
+    "name": "Witness"
+  },
+  {
+    "id": "faithless",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "flagellant",
+      "god_fearing"
+    ],
+    "name": "Faithless"
+  },
+  {
+    "id": "bad_gambler",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "skilled_gambler"
+    ],
+    "name": "Bad Gambler"
+  },
+  {
+    "id": "skilled_gambler",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "bad_gambler"
+    ],
+    "name": "Skilled Gambler"
+  },
+  {
+    "id": "improved_balance",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Improved Balance"
+  },
+  {
+    "id": "meditator",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Meditator"
+  },
+  {
+    "id": "calm",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Calm"
+  },
+  {
+    "id": "weapons_haggler",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Weapons Haggler"
+  },
+  {
+    "id": "armor_haggler",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Armor Haggler"
+  },
+  {
+    "id": "nymphomania",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Nymphomania"
+  },
+  {
+    "id": "fast_healer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "stomach_cramp"
+    ],
+    "name": "Fast Healer"
+  },
+  {
+    "id": "stout",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "physical",
+    "incompatible_quirks": [
+      "bulimic"
+    ],
+    "name": "Stout"
+  },
+  {
+    "id": "gift_of_the_healer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Gift Of The Healer"
+  },
+  {
+    "id": "fear_of_eldritch",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "hatred_of_eldritch",
+      "slayer_of_eldritch"
+    ],
+    "name": "Fear Of Eldritch"
+  },
+  {
+    "id": "fear_of_unholy",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "hatred_of_unholy",
+      "slayer_of_unholy"
+    ],
+    "name": "Fear Of Unholy"
+  },
+  {
+    "id": "fear_of_man",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "hatred_of_man",
+      "slayer_of_man"
+    ],
+    "name": "Fear Of Man"
+  },
+  {
+    "id": "fear_of_beast",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "hatred_of_beast",
+      "slayer_of_beast"
+    ],
+    "name": "Fear Of Beast"
+  },
+  {
+    "id": "hatred_of_eldritch",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "fear_of_eldritch"
+    ],
+    "name": "Hatred Of Eldritch"
+  },
+  {
+    "id": "hatred_of_unholy",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "fear_of_unholy"
+    ],
+    "name": "Hatred Of Unholy"
+  },
+  {
+    "id": "hatred_of_man",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "fear_of_man"
+    ],
+    "name": "Hatred Of Man"
+  },
+  {
+    "id": "hatred_of_beast",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "fear_of_beast"
+    ],
+    "name": "Hatred Of Beast"
+  },
+  {
+    "id": "slayer_of_eldritch",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "fear_of_eldritch"
+    ],
+    "name": "Slayer Of Eldritch"
+  },
+  {
+    "id": "slayer_of_unholy",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "fear_of_unholy"
+    ],
+    "name": "Slayer Of Unholy"
+  },
+  {
+    "id": "slayer_of_man",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "fear_of_man"
+    ],
+    "name": "Slayer Of Man"
+  },
+  {
+    "id": "slayer_of_beast",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "fear_of_beast"
+    ],
+    "name": "Slayer Of Beast"
+  },
+  {
+    "id": "ruins_explorer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Ruins Explorer"
+  },
+  {
+    "id": "warren_explorer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Warren Explorer"
+  },
+  {
+    "id": "weald_explorer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Weald Explorer"
+  },
+  {
+    "id": "cove_explorer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Cove Explorer"
+  },
+  {
+    "id": "ruins_adventurer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "ruins_phobe"
+    ],
+    "name": "Ruins Adventurer"
+  },
+  {
+    "id": "warren_adventurer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "warren_phobe"
+    ],
+    "name": "Warren Adventurer"
+  },
+  {
+    "id": "weald_adventurer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "weald_phobe"
+    ],
+    "name": "Weald Adventurer"
+  },
+  {
+    "id": "cove_adventurer",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "cove_phobe"
+    ],
+    "name": "Cove Adventurer"
+  },
+  {
+    "id": "ruins_scrounger",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Ruins Scrounger"
+  },
+  {
+    "id": "warren_scrounger",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Warren Scrounger"
+  },
+  {
+    "id": "weald_scrounger",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Weald Scrounger"
+  },
+  {
+    "id": "cove_scrounger",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Cove Scrounger"
+  },
+  {
+    "id": "ruins_tactician",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Ruins Tactician"
+  },
+  {
+    "id": "warren_tactician",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Warren Tactician"
+  },
+  {
+    "id": "weald_tactician",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Weald Tactician"
+  },
+  {
+    "id": "cove_tactician",
+    "is_positive": true,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [],
+    "name": "Cove Tactician"
+  },
+  {
+    "id": "ruins_phobe",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "ruins_adventurer"
+    ],
+    "name": "Ruins Phobe"
+  },
+  {
+    "id": "warren_phobe",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "warren_adventurer"
+    ],
+    "name": "Warren Phobe"
+  },
+  {
+    "id": "weald_phobe",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "weald_adventurer"
+    ],
+    "name": "Weald Phobe"
+  },
+  {
+    "id": "cove_phobe",
+    "is_positive": false,
+    "is_disease": false,
+    "classification": "mental",
+    "incompatible_quirks": [
+      "cove_adventurer"
+    ],
+    "name": "Cove Phobe"
+  }
+]
